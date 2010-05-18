@@ -17,6 +17,7 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mutateme/blob/rewrite/LICENSE New BSD License
+ * @author     Arvid Bergelmir <arvid.bergelmir@flabben.net>
  */
 
 require_once 'Mutateme/Adapter/Phpunit.php';
@@ -53,7 +54,7 @@ class Mutateme_Adapter_PhpunitAdapterTest extends PHPUnit_Framework_TestCase
             'src' => dirname(__FILE__) . '/_files/phpunit2',
             'tests' => dirname(__FILE__) . '/_files/phpunit2',
             'base' => dirname(__FILE__) . '/_files/phpunit2',
-            'options' => 'AllTests.php'
+            'options' => 'AllMyTests.php'
         );
         ob_start();
         $adapter->execute($options, true);
