@@ -300,6 +300,7 @@ class Mutable
         );
         $inblock = false;
         $inarg = false;
+        $className = null;
         $curlycount = 0;
         $roundcount = 0;
         $blockTokens = array();
