@@ -240,6 +240,18 @@ reversals):
     * OperatorSubtraction: replace - with +
     * OperatorIncrement: replace ++ with --
     * OperatorDecrement: replace -- with ++
+    * AndEqual: replace &= with |=
+    * OrEqual: replace |= with &=
+    * MulEqual: replace *= with /=
+    * DivEqual: replace /= with *=
+    * PlusEqual: replace += with -=
+    * MinusEqual: replace -= with +=
+    * IsGreaterOrEqual: replace >= with <=
+    * IsSmallerOrEqual: replace <= with >=
+    * IsEqual: replace == with !=
+    * IsNotEqual: replace != with ==
+    * IsIdentical: replace === with !==
+    * IsNotIdentical: replace !== with ===
     
 Obviously, this is just the tip of the iceberg. Mutations will be continually
 added now that we have the core framework in a stable working state.

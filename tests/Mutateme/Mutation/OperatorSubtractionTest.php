@@ -17,8 +17,10 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mutateme/blob/rewrite/LICENSE New BSD License
+ * @author     Arvid Bergelmir <arvid.bergelmir@flabben.net>
  */
 
+require_once 'Mutateme/Mutation/MutationAbstract.php';
 require_once 'Mutateme/Mutation/OperatorSubtraction.php';
 
 class Mutateme_Mutation_OperatorSubtractionTest extends PHPUnit_Framework_TestCase

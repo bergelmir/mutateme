@@ -17,6 +17,7 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mutateme/blob/rewrite/LICENSE New BSD License
+ * @author     Arvid Bergelmir <arvid.bergelmir@flabben.net>
  */
 
 namespace Mutateme;
@@ -215,6 +216,42 @@ class Mutable
                 break;
             case T_BOOLEAN_OR:
                 $type = 'BooleanOr';
+                break;
+            case T_IS_IDENTICAL:
+                $type = 'IsIdentical';
+                break;
+            case T_IS_NOT_IDENTICAL:
+                $type = 'IsNotIdentical';
+                break;
+            case T_IS_EQUAL:
+                $type = 'IsEqual';
+                break;
+            case T_IS_NOT_EQUAL:
+                $type = 'IsNotEqual';
+                break;
+            case T_MUL_EQUAL:
+                $type = 'MulEqual';
+                break;
+            case T_DIV_EQUAL:
+                $type = 'DivEqual';
+                break;
+            case T_PLUS_EQUAL:
+                $type = 'PlusEqual';
+                break;
+            case T_MINUS_EQUAL:
+                $type = 'MinusEqual';
+                break;
+            case T_AND_EQUAL:
+                $type = 'AndEqual';
+                break;
+            case T_OR_EQUAL:
+                $type = 'OrEqual';
+                break;
+            case T_IS_GREATER_OR_EQUAL:
+                $type = 'IsGreaterOrEqual';
+                break;
+           case T_IS_SMALLER_OR_EQUAL:
+                $type = 'IsSmallerOrEqual';
                 break;
             case T_STRING:
                 $type = $this->_parseTString($token);
